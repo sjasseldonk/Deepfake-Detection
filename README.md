@@ -3,7 +3,7 @@ This repo contains code for detecting deepfake videos using hand-crafted facial 
 
 The figure below gives a general visualization of the model used in this study. 
 
-<img width="900" alt="proposed_architecture" src="https://user-images.githubusercontent.com/54868192/118968775-99a0f080-b96c-11eb-8c18-2319e549178c.png">
+![proposedarchitecture](https://user-images.githubusercontent.com/54868192/118985505-c8c05d80-b97e-11eb-87de-101c8c032408.png)
 
 Three models have been evaluated to examine whether hand-crafted facial features can improve the classification performance:
 1. Proposed model: CNN + Hand-crafted Features + LSTM (see figure above)
