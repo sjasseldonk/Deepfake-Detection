@@ -25,10 +25,9 @@ The best performing proposed and baseline CNN-LSTM model were also tested on the
 
 
 ## Acknowlegdements
-
 Celeb-DF V2 Dataset: http://www.cs.albany.edu/~lsw/celeb-deepfakeforensics.html
-
-
+OpenFace: https://github.com/TadasBaltrusaitis/OpenFace
+FaceForensics++: https://github.com/ondyari/FaceForensics
 
 
 
