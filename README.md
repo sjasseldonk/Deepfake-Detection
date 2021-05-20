@@ -15,10 +15,13 @@ Also, the impact of two frame selection methods have been tested. The first fram
 For more information, consult full master paper here that has been submitted for the degree of Master of Science in Data Science & Society. 
 
 ## Results
-The Area Under the ROC Curve and validation accuracies for different frame selection methods are shown below. The 
+The figure below shows the Area Under the ROC Curve when using the different frame selection methods for the proposed and baseline CNN-LSTM model on the Celeb-DF Test Set.
 
 ![aucresults](https://user-images.githubusercontent.com/54868192/118982644-eb9d4280-b97b-11eb-9a32-ee45ec46ce7f.png)
 
+The best performing proposed and baseline CNN-LSTM model were also tested on the FaceSwap and Deepfakes datasets from FaceForensics++. Both test sets came in two flavours, (i) raw videos and (ii) compressed videos. The table below summarizes the test results on these datasets where both models were trained on 10 frames with 15 frames in between. 
+
+<img width="813" alt="testresultsff" src="https://user-images.githubusercontent.com/54868192/118984906-446dda80-b97e-11eb-8809-b3a434fc630d.png">
 
 
 ## Acknowlegdements
