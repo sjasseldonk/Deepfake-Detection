@@ -14,7 +14,7 @@ state of the art results
 
 
 ## Acknowlegdements
-
+Celeb-DF V2 Dataset: http://www.cs.albany.edu/~lsw/celeb-deepfakeforensics.html 
 
 
 
