@@ -14,6 +14,9 @@ Also, the impact of two frame selection methods have been tested. The first fram
 
 For more information, consult full master paper here that has been submitted for the degree of Master of Science in Data Science & Society. 
 
+## Project structuur
+If you want to clone this repo, you should add the data into the following folders...
+
 ## Results
 The figure below shows the Area Under the ROC Curve when using the different frame selection methods for the proposed and baseline CNN-LSTM model on the Celeb-DF Test Set.
 
