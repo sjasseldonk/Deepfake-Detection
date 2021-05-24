@@ -15,7 +15,22 @@ Also, the impact of two frame selection methods have been tested. The first fram
 For more information, consult full master paper here that has been submitted for the degree of Master of Science in Data Science & Society. 
 
 ## Project structuur
-If you want to clone this repo, you should add the data into the following folders...
+If you want to clone this repo, you should organize your data folder as follows:
+
+    .
+    ├── data                     # Training and validation datasets (Celeb-DF V2)
+    │   ├── real_aligned         # Aligned real video frames extracted via OpenFace
+    │   ├── real_handcrafted     # Csv file containing facial features extracted via OpenFace
+    │   ├── fake_aligned         # Aligned fake video frames extracted via OpenFace
+    │   └── fake_handcrafted     # Csv file containing facial features extracted via OpenFace
+    ├── data_test                # Test datasets (FaceForensics++)
+    │   ├── real_aligned      
+    │   ├── real_handcrafted 
+    │   ├── fake_aligned         
+    │   └── fake_handcrafted 
+    └── ...
+
+
 
 ## Results
 The figure below shows the Area Under the ROC Curve when using the different frame selection methods for the proposed and baseline CNN-LSTM model on the Celeb-DF Test Set.
