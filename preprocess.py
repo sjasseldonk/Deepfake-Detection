@@ -14,8 +14,8 @@ from tensorflow.keras.utils import to_categorical
 
 def load_filepaths():
   # Load hand-crafted features from Openface
-  x_real_filenames = [os.path.basename(x[:-4]) for x in glob.glob('/content/drive/My Drive/Thesis Deepfakes 2021/data_sampled/real_hand/*.csv')]
-  x_fake_filenames = [os.path.basename(x[:-4]) for x in glob.glob('/content/drive/My Drive/Thesis Deepfakes 2021/data_sampled/fake_hand/*.csv')]
+  x_real_filenames = [os.path.basename(x[:-4]) for x in glob.glob('/path/data_sampled/real_hand/*.csv')]
+  x_fake_filenames = [os.path.basename(x[:-4]) for x in glob.glob('/path/data_sampled/fake_hand/*.csv')]
 
   # Sort the filenames to make sure right ids are sampled: real -> 1, fake -> 0
   x_real_filenames = sorted(x_real_filenames)
@@ -83,7 +83,7 @@ def load_batch_hand(x_batch, y_batch, n_frames, equal_interval=0):
 
   # Column indexes of hand-crafted features from openface (mouth openness and mouth stretch are added later)
   feature_colindex = [11,12,296,297,298,679,680,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695]
-  root = '/content/drive/My Drive/Thesis Deepfakes 2021/data_sampled/'
+  root = '/path/data_sampled/'
 
   # Loop over all filenames in x_batch_files
   for i, (filename, y) in enumerate(zip(x_batch, y_batch)):
@@ -208,7 +208,7 @@ def load_batch_aligned(x_batch, y_batch, n_frames, equal_interval=0):
     frame_names = generate_frame_names(equal_interval)
     partial_x = np.zeros((len(x_batch), len(frame_indices), 150, 150, 3), dtype=np.float32)
 
-  root = '/content/drive/My Drive/Thesis Deepfakes 2021/data_sampled/'
+  root = '/path/data_sampled/'
 
   # Loop over all filepaths in x_batch and load real data
   for i, (filename, y) in enumerate(zip(x_batch, y_batch)):
